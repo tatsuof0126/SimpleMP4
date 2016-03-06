@@ -1,0 +1,33 @@
+
+/* Class = "IBUILabel"; text = "変換品質"; ObjectID = "8jp-Up-Ro0"; */
+"8jp-Up-Ro0.text" = "変換品質";
+
+/* Class = "IBUILabel"; text = "ver9.9"; ObjectID = "951-Y2-Hw4"; */
+"951-Y2-Hw4.text" = "ver9.9";
+
+/* Class = "IBUIButton"; normalTitle = "変更"; ObjectID = "9Pm-0N-R4Y"; */
+"9Pm-0N-R4Y.normalTitle" = "変更";
+
+/* Class = "IBUITextView"; text = "カメラロールにアクセスする権限がありません。\n設定アプリで設定を確認してください。\n"; ObjectID = "Azs-05-xF6"; */
+"Azs-05-xF6.text" = "カメラロールにアクセスする権限がありません。\n設定アプリで設定を確認してください。\n";
+
+/* Class = "IBUILabel"; text = "SimpleMP4変換"; ObjectID = "Ded-Rc-QVS"; */
+"Ded-Rc-QVS.text" = "SimpleMP4変換";
+
+/* Class = "IBUIBarButtonItem"; title = "戻る"; ObjectID = "eDX-MX-rR1"; */
+"eDX-MX-rR1.title" = "戻る";
+
+/* Class = "IBUINavigationItem"; title = "変換する動画を選択"; ObjectID = "fk5-C9-wkg"; */
+"fk5-C9-wkg.title" = "変換する動画を選択";
+
+/* Class = "IBUIBarButtonItem"; title = "更新"; ObjectID = "ha9-BH-eXB"; */
+"ha9-BH-eXB.title" = "更新";
+
+/* Class = "IBUIBarButtonItem"; title = "設定"; ObjectID = "j7N-Xi-DrV"; */
+"j7N-Xi-DrV.title" = "設定";
+
+/* Class = "IBUINavigationItem"; title = "設定"; ObjectID = "oOI-Xq-SeT"; */
+"oOI-Xq-SeT.title" = "設定";
+
+/* Class = "IBUILabel"; text = "高品質"; ObjectID = "sww-8Z-Wwf"; */
+"sww-8Z-Wwf.text" = "高品質";
