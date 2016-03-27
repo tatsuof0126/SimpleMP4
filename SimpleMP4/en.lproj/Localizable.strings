@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  SimpleMP4
+
+  Created by 藤原 達郎 on 2016/03/06.
+  Copyright (c) 2016年 Tatsuo Fujiwara. All rights reserved.
+*/
+
+"Cancel" = "Cancel";
+
+
+"High Quality" = "High";
+
+"Middle Quality" = "Middle";
+
+"Low Quality" = "Low";
+
+"Select Quality" = "Select Convert Quality";
+
+"Convert Confirm" = "Convert the selected file to MP4.";
+
+"Error Already MP4" = "Already MP4 format.";
+
+"Error Bad format" = "File format that can not be converted.";
+
+"Error Fail save Video" = "Failed to save the converted file.";
+
+"Error Fail convert" = "Conversion failed.";
+
+"Error Cancel convert" = "Conversion has been canceled.";
+
+"Complete Convert" = "Conversion complete.";
+
+"To Camera Roll" = "To Camera Roll";

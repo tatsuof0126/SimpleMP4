@@ -114,9 +114,9 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
         // ファイルタイプのチェック
         var errorMsg = ""
         if(filetype == "MP4"){
-            errorMsg = "すでにMP4形式のため変換できません"
+            errorMsg = NSLocalizedString("Error Already MP4", comment: "")
         } else if(Utility.canConvertMP4(filetype) == false){
-            errorMsg = "変換できないファイル形式です"
+            errorMsg = NSLocalizedString("Error Bad format", comment: "")
         }
         if(errorMsg != ""){
             let alertController = UIAlertController(title: "", message: errorMsg, preferredStyle: .Alert)
@@ -127,7 +127,7 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
         }
         
         let alertController = UIAlertController(title: "",
-            message: "選択したファイルをMP4に変換します。\nよろしいですか？", preferredStyle: .Alert)
+            message: NSLocalizedString("Convert Confirm", comment: ""), preferredStyle: .Alert)
         let otherAction = UIAlertAction(title: "OK", style: .Default) {
             action in
             // ぐるぐるを回す
@@ -142,7 +142,8 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
                 self.convertMovie(asset)
             })
         }
-        let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""),
+            style: .Cancel, handler: nil)
         
         alertController.addAction(cancelAction)
         alertController.addAction(otherAction)
@@ -202,24 +203,24 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
                     UISaveVideoAtPathToSavedPhotosAlbum(outputFilePath, self, "video:didFinishSavingWithError:contextInfo:", nil)
                 } else {
                     // println("カメラロール保存不可")
-                    self.showResult(false, errorMsg: "変換後の保存に失敗しました")
+                    self.showResult(false, errorMsg: NSLocalizedString("Error Fail save Video", comment: ""))
                 }
                 break
             case AVAssetExportSessionStatus.Failed:
                 // println("Failed");
                 println("Error:\(exportSession.error.debugDescription)")
-                self.showResult(false, errorMsg: "変換に失敗しました")
+                self.showResult(false, errorMsg: NSLocalizedString("Error Fail convert", comment: ""))
                 break
             case AVAssetExportSessionStatus.Cancelled:
                 // println("Cancelled");
-                self.showResult(false, errorMsg: "変換がキャンセルされました")
+                self.showResult(false, errorMsg: NSLocalizedString("Error Cancel convert", comment: ""))
                 break
             default:
                 break
             }
         }
     }
-
+    
     func video(videoPath: String, didFinishSavingWithError error: NSError!, contextInfo info: UnsafeMutablePointer<Void>) {
         
         // 一時ファイルを削除
@@ -227,7 +228,7 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
         
         if (error != nil) {
             // println("保存失敗")
-            self.showResult(false, errorMsg: "変換後の動画の保存に失敗しました")
+            self.showResult(false, errorMsg: NSLocalizedString("Error Fail save Video", comment: ""))
         } else {
             // println("成功")
             self.showResult(true, errorMsg: "")
@@ -235,7 +236,7 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func showResult(result : Bool, errorMsg : String){
-        var message = "完了しました"
+        var message = NSLocalizedString("Complete Convert", comment: "")
         if(result == false){
             message = errorMsg
         }
@@ -246,8 +247,14 @@ class ConvertVideoViewController: UIViewController, UICollectionViewDelegate, UI
             self.converting = false
             
             let alertController = UIAlertController(title: "", message: message, preferredStyle: .Alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alertController.addAction(defaultAction)
+            let cameraRollAction = UIAlertAction(title: NSLocalizedString("To Camera Roll", comment: ""), style: .Default, handler:{
+                (action:UIAlertAction!) -> Void in
+                let url = NSURL(string: "photos-redirect://")
+                UIApplication.sharedApplication().openURL(url!)
+            })
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(cameraRollAction)
+            alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
             
             // 読み込み直し

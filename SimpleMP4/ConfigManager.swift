@@ -23,11 +23,11 @@ class ConfigManager: NSObject {
     class func getExportPresetString() -> String {
         let exportPreset = ConfigManager.getExportPreset()
         if(exportPreset == AVAssetExportPresetHighestQuality){
-            return "高品質"
+            return NSLocalizedString("High Quality", comment: "")
         } else if (exportPreset == AVAssetExportPresetMediumQuality){
-            return "中品質"
+            return NSLocalizedString("Middle Quality", comment: "")
         } else if (exportPreset == AVAssetExportPresetLowQuality){
-            return "低品質"
+            return NSLocalizedString("Low Quality", comment: "")
         }
         return ""
     }

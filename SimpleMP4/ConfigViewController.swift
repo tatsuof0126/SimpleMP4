@@ -34,28 +34,32 @@ class ConfigViewController: UIViewController {
     
     @IBAction func changeButton(sender: AnyObject) {
         let actionSheet:UIAlertController = UIAlertController(title:"",
-            message: "変換品質を選択してください",
+            message: NSLocalizedString("Select Quality", comment: ""),
             preferredStyle: UIAlertControllerStyle.ActionSheet
         )
         
-        let cancelAction:UIAlertAction = UIAlertAction(title: "キャンセル",
+        let cancelAction:UIAlertAction = UIAlertAction(title:
+            NSLocalizedString("Cancel", comment: ""),
             style: UIAlertActionStyle.Cancel,
             handler:{
                 (action:UIAlertAction!) -> Void in
         })
-        let highAction:UIAlertAction = UIAlertAction(title: "高品質",
+        let highAction:UIAlertAction = UIAlertAction(title:
+            NSLocalizedString("High Quality", comment: ""),
             style: UIAlertActionStyle.Default,
             handler: {
                 (action:UIAlertAction!) -> Void in
                 self.setExportPreset(AVAssetExportPresetHighestQuality)
         })
-        let mediumAction:UIAlertAction = UIAlertAction(title: "中品質",
+        let mediumAction:UIAlertAction = UIAlertAction(title:
+            NSLocalizedString("Middle Quality", comment: ""),
             style: UIAlertActionStyle.Default,
             handler: {
                 (action:UIAlertAction!) -> Void in
                 self.setExportPreset(AVAssetExportPresetMediumQuality)
         })
-        let lowAction:UIAlertAction = UIAlertAction(title: "低品質",
+        let lowAction:UIAlertAction = UIAlertAction(title:
+            NSLocalizedString("Low Quality", comment: ""),
             style: UIAlertActionStyle.Default,
             handler: {
                 (action:UIAlertAction!) -> Void in

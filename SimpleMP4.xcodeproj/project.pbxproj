@@ -16,6 +16,7 @@
 		0B16B37D1C3978CE00295829 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16B37C1C3978CE00295829 /* ConfigViewController.swift */; };
 		0B16B3801C397F1400295829 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16B37E1C397F1400295829 /* MovieCollectionViewCell.swift */; };
 		0B16B3811C397F1400295829 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B16B37F1C397F1400295829 /* MovieCollectionViewCell.xib */; };
+		0B9C98B11C8C3D8000F29A98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B9C98B31C8C3D8000F29A98 /* Localizable.strings */; };
 		0BAA59361C39FE270096C6DA /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAA59351C39FE270096C6DA /* Photos.framework */; };
 		0BAA59381C3A29C20096C6DA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA59371C3A29C20096C6DA /* Utility.swift */; };
 		0BAA593A1C3D658A0096C6DA /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA59391C3D658A0096C6DA /* ConfigManager.swift */; };
@@ -45,8 +46,12 @@
 		0B16B37C1C3978CE00295829 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		0B16B37E1C397F1400295829 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		0B16B37F1C397F1400295829 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
-		0B9C98A71C8C342000F29A98 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		0B9C98A81C8C342000F29A98 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0B9C98A91C8C38B200F29A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0B9C98AA1C8C38B200F29A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0B9C98AB1C8C3C7400F29A98 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		0B9C98AC1C8C3C7400F29A98 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0B9C98B21C8C3D8000F29A98 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0B9C98B41C8C3D8800F29A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0BAA59351C39FE270096C6DA /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0BAA59371C3A29C20096C6DA /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		0BAA59391C3D658A0096C6DA /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0B16B3591C3972D600295829 /* Info.plist */,
+				0B9C98B31C8C3D8000F29A98 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 					};
 					0B16B3691C3972D600295829 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = PNCW72YDW4;
 						TestTargetID = 0B16B3541C3972D600295829;
 					};
 				};
@@ -195,8 +202,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = 0B16B34C1C3972D600295829;
 			productRefGroup = 0B16B3561C3972D600295829 /* Products */;
@@ -214,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9C98B11C8C3D8000F29A98 /* Localizable.strings in Resources */,
 				0B16B3601C3972D600295829 /* Main.storyboard in Resources */,
 				0B16B3651C3972D600295829 /* LaunchScreen.xib in Resources */,
 				0B16B3621C3972D600295829 /* Images.xcassets in Resources */,
@@ -267,7 +275,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B16B35F1C3972D600295829 /* Base */,
-				0B9C98A71C8C342000F29A98 /* ja */,
+				0B9C98A91C8C38B200F29A98 /* en */,
+				0B9C98AB1C8C3C7400F29A98 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -276,9 +285,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B16B3641C3972D600295829 /* Base */,
-				0B9C98A81C8C342000F29A98 /* ja */,
+				0B9C98AA1C8C38B200F29A98 /* en */,
+				0B9C98AC1C8C3C7400F29A98 /* ja */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0B9C98B31C8C3D8000F29A98 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9C98B21C8C3D8000F29A98 /* ja */,
+				0B9C98B41C8C3D8800F29A98 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -301,6 +320,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -321,6 +341,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2e113b4d-78e2-4cdb-bdcb-d3fce11ce774";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -343,7 +364,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -356,6 +378,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2e113b4d-78e2-4cdb-bdcb-d3fce11ce774";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -373,7 +396,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2e113b4d-78e2-4cdb-bdcb-d3fce11ce774";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -383,14 +406,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tatsuo Fujiwara (59Q7GGKNL2)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SimpleMP4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2e113b4d-78e2-4cdb-bdcb-d3fce11ce774";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -400,6 +423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -411,6 +436,7 @@
 				INFOPLIST_FILE = SimpleMP4Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMP4.app/SimpleMP4";
 			};
 			name = Debug;
@@ -419,6 +445,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -426,6 +454,7 @@
 				INFOPLIST_FILE = SimpleMP4Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMP4.app/SimpleMP4";
 			};
 			name = Release;
